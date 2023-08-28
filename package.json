@@ -1,0 +1,28 @@
+{
+  "name": "labphase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "start": "concurrently \"npm run server \" \"cd ..&& cd client &&npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "bcrypt": "^5.1.0",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mdb-react-ui-kit": "^6.2.0",
+    "mongoose": "^7.4.2",
+    "react-redux": "^8.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
