@@ -2,7 +2,7 @@ const jwt=require('jsonwebtoken')
 const authmiddleware=async(req,res,next)=>{
     try {
     const token=req.headers.token
-    const verifytoken=jwt.verify(token,process.env.jwt)
+    const verifytoken=jwt.verify(token,process.env.JWT)
     if (!verifytoken){res.status(400).json({msg:"you are not authorized"})}
     else {
         req.body.userid=verifytoken.id
